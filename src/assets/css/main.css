@@ -1,0 +1,36 @@
+#app{
+    font-family: 'Roboto', sans-serif;
+}
+.router-link-exact-active{
+    font-weight: bold;
+}
+
+.text-ufood{
+    color: rgb(140 178 3);
+    font-weight: bold;
+}
+
+/* .navbar-light .navbar-nav .nav-link{
+    color: rgb(121 154 2);
+} */
+
+.btn-success{
+    background-color: rgb(140 178 3);
+}
+
+.btn-success:hover{
+    background-color: rgb(86 108 4);
+}
+
+.badge-success{
+    background-color: rgb(140 178 3);
+}
+
+.card-makanan{
+    border-radius: 15px;
+}
+
+.card-img-top{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
