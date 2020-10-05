@@ -10,9 +10,14 @@
     font-weight: bold;
 }
 
-/* .navbar-light .navbar-nav .nav-link{
-    color: rgb(121 154 2);
-} */
+.breadcrumb{
+    background-color: whitesmoke;
+}
+
+.breadcrumb-item.active{
+    color: rgb(140 178 3);
+    font-weight: bold;
+}
 
 .btn-success{
     background-color: rgb(140 178 3);
@@ -33,4 +38,8 @@
 .card-img-top{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+}
+
+.image-round{
+    border-radius: 20px;
 }

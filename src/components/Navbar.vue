@@ -14,7 +14,7 @@
             <router-link class="nav-link mr-3" to="/makanan">Makanan</router-link>
             <router-link class="nav-link" to="/keranjang"> 
             <b-icon-bag-fill></b-icon-bag-fill>
-            <span class="badge badge-success ml-2">0</span>
+            <span class="badge badge-success ml-2">{{ jumlah_pesanans.length }}</span>
             </router-link>
             </b-navbar-nav>
         </b-collapse>
@@ -24,9 +24,24 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
     name: "navbar",
-};
+    data(){
+        return {
+            jumlah_pesanans: []
+        }
+    },
+    methods:{
+        setJumlah(data){
+            this.jumlah_pesanans = data
+        }
+    },
+    mounted(){
+        axios
+        .get('http://localhost:3000/keranjangs/')
+        .then((response)=>this.setJumlah(response.data))
+        .catch((error)=>console.log("Gagal: ", error))
+    },
+}
 </script>
-
-<style></style>

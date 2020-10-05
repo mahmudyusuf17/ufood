@@ -8,7 +8,7 @@
                         <div class="justify-content-center align-self-center">
                         <h2><strong>Pilih Disini,</strong><br>Makanan Kesukaanmu.</h2>
                         <p>Apapun pilihan kamu, aku dukung. <br> Yuk pesan sekarang</p>
-                        <b-button variant="btn-success" class="btn-success my-2 my-sm-0" size="md" type="submit" to="/pesan"><b-icon-arrow-right></b-icon-arrow-right> Pesan</b-button>
+                        <b-button variant="btn-success" class="btn-success my-2 my-sm-0" size="md" type="submit" to="/makanan"><b-icon-arrow-right></b-icon-arrow-right> Pesan</b-button>
                     </div>
                     </div>
                 </div>

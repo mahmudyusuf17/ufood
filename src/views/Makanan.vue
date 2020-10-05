@@ -11,9 +11,11 @@
                     <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
                     <b-button variant="btn-success" class="btn-success my-2 my-sm-0" size="sm" type="submit">Search</b-button>
                 </b-nav-form> -->
-                <b-input-group class="mb-2 mr-sm-2 mb-sm-0">
-                <b-input v-model="search" @keyup="searchMakanan" id="inline-form-input-search" class="mr-sm-2" size="sm" placeholder="cari makanan kesukaanmu.."></b-input>
-                <b-button variant="btn-success" class="btn-success my-2 my-sm-0" size="sm" type="submit"> Search</b-button>
+                <b-input-group  size="sm" class="mb-2 mr-sm-2 mb-sm-0">
+                <b-input v-model="search" @keyup="searchMakanan" id="inline-form-input-search" placeholder="cari makanan kesukaanmu.."></b-input>
+                <b-input-group-prepend is-text>
+                    <b-icon icon="search"></b-icon>
+                </b-input-group-prepend>    
                 </b-input-group>
             </div>
             </div>
@@ -41,7 +43,7 @@ export default {
     },
     data(){
         return{
-        products: [],
+        products: {},
         search:''
         }
     },
